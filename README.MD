@@ -1,13 +1,14 @@
 # PROYECTO NODEJS
-
+Creamos un nuevo proyecto y dentro de esa carpeta:
 npm init --yes
 npm install mongoose
 npm install typescript -D
 npx tsc --init
 Se genera el tsconfig.json y en el hacemos las modificaciones de siempre: '"target": "es6",', '"outDir": "./dist",' y en la linea 68 ponemos lo siguiente:
+    ,
   "exclude": [
     "node_modules"
-]
+  ]
 En el .gitignore ponemos dist y node_modules
 Instalamos el mongoose:
 npm install @types/mongoose
@@ -22,6 +23,7 @@ Creamos el README.md
 Ahora subimos nuestro proyecto a Github
 git add .
 git commit -m "first commit"
+git branch -M main
 git remote add origin https://github.com/davidgg95/1030_nodejs.git
-git push -u origin master
+git push -u origin main
 Creamos la carpeta view y metemos los archivos 'entradaTeclado' y 'menuPral'
